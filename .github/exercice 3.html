@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 3 - Calcul TVA</title>
+</head>
+
+<body>
+    <h1>Mini-Calculatrice de Prix</h1>
+    <p>Ouvrez la console (F12) pour voir le résultat.</p>
+
+    <script>
+        const TAUX_TVA = 0.20;
+        let prixHT = 150;
+        let montantTVA = TAUX_TVA * prixHT;
+        let prixTTC = prixHT + montantTVA;
+
+
+        console.log(`Prix HT : ${prixHT} € | TVA (${TAUX_TVA * 100}%) : ${montantTVA} € | Prix TTC : ${prixTTC} €`);
+    </script>
+</body>
+
+</html>
